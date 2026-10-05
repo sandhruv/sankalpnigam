@@ -47,15 +47,23 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ name, email, subject, message }),
       });
-      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+      if (!response.ok) {
+        const detail = (await response.json().catch(() => null)) as {
+          error?: string;
+        } | null;
+        throw new Error(detail?.error ?? `Request failed: ${response.status}`);
+      }
       setStatus("sent");
       setNote("Thanks — your message is on its way to my inbox. I'll reply soon.");
       form.reset();
       return;
-    } catch {
+    } catch (error) {
+      const reason = error instanceof Error ? error.message : "Unknown error";
       window.location.href = mailto;
-      setStatus("sent");
-      setNote("Mail server unreachable — your e-mail app should open with the message ready to send.");
+      setStatus("error");
+      setNote(
+        `Server said: ${reason} — opening your e-mail app as a back-up.`,
+      );
       form.reset();
     }
   }
