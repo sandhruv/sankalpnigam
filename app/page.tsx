@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Hero } from "@/components/hero";
+import { ProjectMarquee } from "@/components/project-marquee";
 import { AchievementMarquee } from "@/components/achievement-marquee";
 import { PageShell } from "@/components/page-shell";
 import { sections } from "@/lib/resume";
@@ -8,6 +9,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+
+      <ProjectMarquee />
 
       <AchievementMarquee />
 

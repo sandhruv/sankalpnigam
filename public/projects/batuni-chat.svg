@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Batuni Chat App - real-time Android chat application">
+  <defs>
+    <linearGradient id="batBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131313" />
+      <stop offset="1" stop-color="#2e2419" />
+    </linearGradient>
+    <linearGradient id="batAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcd34d" />
+      <stop offset="1" stop-color="#ca8a04" />
+    </linearGradient>
+    <radialGradient id="batGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.38" />
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="batDots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#batBg)" />
+  <rect width="1200" height="630" fill="url(#batDots)" />
+  <circle cx="900" cy="230" r="270" fill="url(#batGlow)" />
+
+  <!-- phone -->
+  <g>
+    <rect x="848" y="66" width="212" height="316" rx="30" fill="#0f0f0f" stroke="#fbbf24" stroke-opacity="0.7" stroke-width="4" />
+    <rect x="874" y="88" width="160" height="14" rx="7" fill="#ffffff" fill-opacity="0.16" />
+    <rect x="916" y="76" width="76" height="10" rx="5" fill="#ffffff" fill-opacity="0.12" />
+    <!-- incoming -->
+    <rect x="874" y="124" width="112" height="54" rx="16" fill="#ffffff" fill-opacity="0.12" />
+    <rect x="890" y="142" width="72" height="8" rx="4" fill="#ffffff" fill-opacity="0.35" />
+    <rect x="890" y="158" width="48" height="8" rx="4" fill="#ffffff" fill-opacity="0.25" />
+    <!-- outgoing -->
+    <rect x="924" y="192" width="110" height="54" rx="16" fill="url(#batAmber)" />
+    <rect x="940" y="210" width="72" height="8" rx="4" fill="#131313" fill-opacity="0.55" />
+    <rect x="940" y="226" width="44" height="8" rx="4" fill="#131313" fill-opacity="0.4" />
+    <!-- typing -->
+    <rect x="874" y="260" width="74" height="38" rx="16" fill="#ffffff" fill-opacity="0.1" />
+    <circle cx="896" cy="279" r="5" fill="#fbbf24" fill-opacity="0.85" />
+    <circle cx="912" cy="279" r="5" fill="#fbbf24" fill-opacity="0.6" />
+    <circle cx="928" cy="279" r="5" fill="#fbbf24" fill-opacity="0.35" />
+    <!-- composer -->
+    <rect x="874" y="316" width="160" height="34" rx="17" fill="#ffffff" fill-opacity="0.1" />
+    <circle cx="1012" cy="333" r="13" fill="url(#batAmber)" />
+  </g>
+
+  <!-- floating chat bubbles -->
+  <g>
+    <rect x="618" y="112" width="204" height="88" rx="20" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16" />
+    <path d="M652 200 L652 240 L692 200 Z" fill="#ffffff" fill-opacity="0.08" />
+    <rect x="644" y="140" width="132" height="10" rx="5" fill="#fbbf24" fill-opacity="0.8" />
+    <rect x="644" y="164" width="164" height="10" rx="5" fill="#ffffff" fill-opacity="0.24" />
+  </g>
+  <g>
+    <rect x="646" y="256" width="196" height="86" rx="20" fill="url(#batAmber)" fill-opacity="0.92" />
+    <path d="M810 342 L810 382 L770 342 Z" fill="#ca8a04" fill-opacity="0.92" />
+    <rect x="672" y="282" width="144" height="10" rx="5" fill="#131313" fill-opacity="0.5" />
+    <rect x="672" y="306" width="96" height="10" rx="5" fill="#131313" fill-opacity="0.35" />
+  </g>
+
+  <!-- delivered ticks -->
+  <g stroke="#fbbf24" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-opacity="0.9">
+    <path d="M704 372 l12 12 24 -28" />
+    <path d="M724 372 l12 12 24 -28" />
+  </g>
+
+  <!-- bottom band -->
+  <rect x="0" y="404" width="1200" height="226" fill="#0c0c0c" fill-opacity="0.55" />
+  <rect x="0" y="404" width="1200" height="2" fill="#ca8a04" fill-opacity="0.55" />
+
+  <rect x="72" y="440" width="64" height="4" rx="2" fill="#ca8a04" />
+  <text x="72" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="6" fill="#fbbf24">REAL-TIME ANDROID APP</text>
+  <text x="72" y="548" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#ffffff">Batuni Chat App</text>
+  <text x="72" y="590" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#cfc9c0">Firebase Auth and Realtime Database messaging</text>
+</svg>

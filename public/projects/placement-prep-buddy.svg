@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Placement Prep Buddy - AI mock interview platform">
+  <defs>
+    <linearGradient id="ppbBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#131313" />
+      <stop offset="1" stop-color="#33261a" />
+    </linearGradient>
+    <linearGradient id="ppbAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fcd34d" />
+      <stop offset="1" stop-color="#ca8a04" />
+    </linearGradient>
+    <radialGradient id="ppbGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="ppbDots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.05" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ppbBg)" />
+  <rect width="1200" height="630" fill="url(#ppbDots)" />
+  <circle cx="920" cy="230" r="280" fill="url(#ppbGlow)" />
+
+  <!-- waveform -->
+  <g fill="#fbbf24" fill-opacity="0.55">
+    <rect x="586" y="248" width="12" height="60" rx="6" />
+    <rect x="612" y="216" width="12" height="124" rx="6" />
+    <rect x="638" y="264" width="12" height="42" rx="6" />
+    <rect x="664" y="188" width="12" height="180" rx="6" />
+    <rect x="690" y="238" width="12" height="80" rx="6" />
+    <rect x="716" y="268" width="12" height="34" rx="6" />
+  </g>
+
+  <!-- microphone -->
+  <rect x="874" y="104" width="96" height="184" rx="48" fill="url(#ppbAmber)" />
+  <rect x="906" y="132" width="32" height="128" rx="16" fill="#131313" fill-opacity="0.25" />
+  <path d="M840 244 C840 320 1004 320 1004 244" fill="none" stroke="url(#ppbAmber)" stroke-width="16" stroke-linecap="round" />
+  <rect x="914" y="312" width="16" height="54" fill="url(#ppbAmber)" />
+  <rect x="874" y="366" width="96" height="16" rx="8" fill="url(#ppbAmber)" />
+
+  <!-- speech bubble -->
+  <g>
+    <rect x="606" y="84" width="236" height="92" rx="18" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.16" />
+    <path d="M646 176 L646 216 L686 176 Z" fill="#ffffff" fill-opacity="0.08" />
+    <rect x="634" y="112" width="132" height="10" rx="5" fill="#fbbf24" fill-opacity="0.85" />
+    <rect x="634" y="136" width="176" height="10" rx="5" fill="#ffffff" fill-opacity="0.24" />
+  </g>
+
+  <!-- bottom band -->
+  <rect x="0" y="404" width="1200" height="226" fill="#0c0c0c" fill-opacity="0.55" />
+  <rect x="0" y="404" width="1200" height="2" fill="#ca8a04" fill-opacity="0.55" />
+
+  <rect x="72" y="440" width="64" height="4" rx="2" fill="#ca8a04" />
+  <text x="72" y="486" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="6" fill="#fbbf24">AI MOCK INTERVIEW</text>
+  <text x="72" y="548" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#ffffff">Placement Prep Buddy</text>
+  <text x="72" y="590" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#cfc9c0">Skill-gap analysis, adaptive AI interviewer, scored report</text>
+</svg>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/page-shell";
 import { ExternalLink } from "@/components/external-link";
+import { ZoomableImage } from "@/components/zoomable-image";
 import { projects } from "@/lib/resume";
 
 export const metadata: Metadata = { title: "Projects" };
@@ -18,7 +19,24 @@ export default function ProjectsPage() {
             key={project.name}
             className="flex flex-col rounded-[2px] border border-line bg-white p-6"
           >
-            <div className="flex items-start justify-between gap-4">
+            {project.image ? (
+              <ZoomableImage
+                src={project.image}
+                alt={project.imageAlt ?? project.name}
+                width={project.imageWidth ?? 1200}
+                height={project.imageHeight ?? 630}
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                buttonClassName="-mx-6 -mt-6"
+                imageClassName="h-auto w-full border-b border-line"
+                priority
+              />
+            ) : null}
+
+            <div
+              className={`flex items-start justify-between gap-4 ${
+                project.image ? "mt-5" : ""
+              }`}
+            >
               <div>
                 <h2 className="text-lg font-medium text-ink">
                   {project.name}

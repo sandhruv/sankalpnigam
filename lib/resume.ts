@@ -94,6 +94,11 @@ export const projects = [
       "Integrated Tavily for live job-market research so questions match the target role; React + FastAPI + MongoDB stack deployed on Render.",
     ],
     tech: ["React", "FastAPI", "Groq LLM", "Tavily", "MongoDB", "Render"],
+    image: "/projects/placement-prep-buddy.svg",
+    imageAlt:
+      "Placement Prep Buddy cover art: an amber microphone with speech bubble and audio waveform, labelled AI mock interview platform",
+    imageWidth: 1200,
+    imageHeight: 630,
     links: [
       {
         label: "Live",
@@ -125,6 +130,11 @@ export const projects = [
       "Razorpay",
       "Docker",
     ],
+    image: "/projects/vettora.svg",
+    imageAlt:
+      "Vettora cover art: a scanned resume card with amber check marks and an ATS match score, labelled recruitment platform",
+    imageWidth: 1200,
+    imageHeight: 630,
     links: [
       {
         label: "Live",
@@ -155,6 +165,11 @@ export const projects = [
       "Nginx",
       "Google Cloud Run",
     ],
+    image: "/projects/sangam-rag.svg",
+    imageAlt:
+      "SangamRAG cover art: connected vector index nodes linked to a document, with a red conflict flag on a contradictory claim",
+    imageWidth: 1200,
+    imageHeight: 630,
     links: [
       {
         label: "Live",
@@ -180,6 +195,11 @@ export const projects = [
       "Adapters",
       "Models",
     ],
+    image: "/projects/batuni-chat.svg",
+    imageAlt:
+      "Batuni Chat App cover art: an Android phone showing incoming and outgoing chat bubbles with typing dots and delivery ticks",
+    imageWidth: 1200,
+    imageHeight: 630,
     links: [
       {
         label: "GitHub",
