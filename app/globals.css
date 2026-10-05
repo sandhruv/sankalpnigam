@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-roboto), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono);
+  --font-script: var(--font-caveat), "Comic Sans MS", cursive;
+
+  --color-accent: #ca8a04;
+  --color-accent-deep: #854d0e;
+  --color-accent-soft: #fef3c7;
+  --color-ink: #212121;
+  --color-body: #212121;
+  --color-muted: #5f6368;
+  --color-line: #dadce0;
+  --color-surface: #e6eaee;
+  --color-nav: #212121;
+  --color-footer: #4f474e;
+}
+
+:root {
+  --background: #e6eaee;
+  --foreground: #212121;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 13pt;
+  line-height: 1.55;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee {
+    animation: none !important;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.marquee:hover .animate-marquee,
+.marquee:focus-within .animate-marquee {
+  animation-play-state: paused;
+}
